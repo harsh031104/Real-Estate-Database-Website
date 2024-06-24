@@ -1,0 +1,365 @@
+/* index_css.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat-black", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ----------------------------- Navbar ---------------------------- */
+
+.navbar {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.nav-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  line-height: 0.8;
+  margin-left: -5%;
+  color: #323644;
+  text-decoration: none;
+  /* font-weight: bolder; */
+}
+
+.nav-items {
+  list-style-type: none;
+  display: flex;
+  margin-right: 20%;
+  margin-top: 18px; /* Adjust margin-top to center nav items vertically */
+  margin-bottom: 0; /* Remove margin-bottom */
+  justify-content: center; /* Center align nav items */
+  align-items: flex-start; /* Align items to the start */
+  font-size: large;
+}
+
+.nav-items li {
+  margin-right: 25px;
+  padding: 10px 0;
+}
+
+.nav-items li:last-child {
+  margin-right: 0;
+}
+
+.nav-items a {
+  color: #323644;
+  text-decoration: none;
+}
+
+.sell-property {
+  margin-left: auto;
+}
+
+.navbar img {
+  margin-left: 20%;
+  margin-right: 0;
+  width: auto;
+  padding: 0;
+}
+
+/* CSS for User Dropdown */
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px; /* Adjust margin-top to align profile image vertically */
+  margin-right: 20px; /* Adjust margin-right to create space between nav-brand and profile image */
+}
+
+.profile-image {
+  margin-top: -22px;
+  width: auto;
+  height: 35px; /* Set the height to match nav-brand */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ----------------------------- IMAGE CONTAIENR ---------------------------- */
+.image-container {
+  display: flex;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.img-text {
+  font-family: opensanshebrewcondensed-regular, sans-serif;
+  position: absolute;
+  left: 20%;
+  transform: translateX(-20%);
+  color: #323644;
+  font-weight: bolder;
+  font-size: 80px;
+  margin-left: 8%;
+  /* width: 45%; */
+}
+
+.text {
+  font-size: 80px;
+  align-self: center;
+  line-height: 96px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none rgb(50, 54, 68);
+  text-align: start;
+  text-indent: 0px;
+  margin-top: 70px;
+}
+
+.img-text button {
+  background-color: transparent;
+  color: #323644;
+  border: solid #323644;
+  padding: 0.4vw 2.2vw;
+  font-size: 1vw;
+  font-weight: 800;
+}
+
+#Queries {
+  text-decoration: none;
+  color: #323644;
+}
+
+/* ----------------------------- Properties ---------------------------- */
+
+#properties {
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #323644;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+.input__container {
+  position: relative;
+  background: #f0f0f0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 22px;
+  max-width: 300px;
+}
+
+.input__button__shadow {
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.input__search {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  position: relative;
+}
+
+.property-section {
+  margin-bottom: 20px;
+}
+
+.property-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.property-section .col-md-6 {
+  flex: 0 0 50%;
+  padding: 10px;
+}
+
+.property-section img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#property-details {
+  margin: 10% 20%;
+}
+
+#property-details h2 {
+  text-align: center;
+}
+
+#property-details .row {
+  margin-bottom: 20px;
+}
+
+#property-details img {
+  width: 100%;
+  height: auto;
+}
+
+#property-details h3 {
+  margin-top: 20px;
+}
+
+#property-details p {
+  margin-bottom: 10px;
+}
+
+#view-details {
+  text-decoration: none;
+  color: #323644;
+}
+
+.property-btn {
+  background-color: transparent;
+  color: #323644;
+  border: solid #323644;
+  padding: 0.4vw 2.2vw;
+  font-size: 1vw;
+  font-weight: 800;
+}
+
+#property-btn {
+  text-decoration: none;
+  color: #323644;
+}
+
+/* ----------------------------- Testimonials ---------------------------- */
+
+#testimonials {
+  padding: 55px 0;
+  color: #fff;
+  /* background-size: 110%; */
+}
+
+.testimonial {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.client-name {
+  font-weight: bold;
+}
+
+/* ----------------------------- Footer ---------------------------- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #323644;
+  color: #9396a2;
+  padding: 50px 150px;
+  box-sizing: border-box;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: medium;
+  line-height: 0.8;
+}
+
+.contact-form address {
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+.contact-form small {
+  padding-top: 100px;
+  font-size: large;
+}
+
+.contact-info h4,
+.contact-form h4 {
+  margin-bottom: 30px;
+  font-size: medium;
+  line-height: 1.5;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 0%;
+}
+
+.contact-form button {
+  padding: 1px 20px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005f73;
+}
